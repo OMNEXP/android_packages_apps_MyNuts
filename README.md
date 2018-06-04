@@ -1,6 +1,5 @@
-Hazard
+MyNuts
 ==============================
-![Hazard](http://i.imgur.com/MIpJb1z.jpg)
 ==============================
 ## Based on DU-Tweaks
 

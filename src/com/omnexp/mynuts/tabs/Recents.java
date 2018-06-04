@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.tabs;
+package com.omnexp.mynuts.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,23 +34,23 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class Navigation extends SettingsPreferenceFragment implements
+public class Recents extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "Navigation";
+    private static final String TAG = "Recents";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.navigation);
+        addPreferencesFromResource(R.xml.recents);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAZARD;
+        return MetricsProto.MetricsEvent.MYNUTS;
     }
 
     @Override

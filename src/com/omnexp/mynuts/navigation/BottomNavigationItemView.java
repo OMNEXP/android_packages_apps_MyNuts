@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.navigation;
+package com.omnexp.mynuts.navigation;
 
 import static android.support.annotation.RestrictTo.Scope.GROUP_ID;
 

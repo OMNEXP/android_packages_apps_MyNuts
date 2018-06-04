@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.toxyc.hazard.preference;
+package com.omnexp.mynuts.preference;
 
 import android.content.Context;
 import android.content.res.TypedArray;

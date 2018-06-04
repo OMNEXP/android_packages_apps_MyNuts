@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/navigation"/>
 
-    <com.toxyc.hazard.navigation.BottomNavigationViewCustom
+    <com.omnexp.mynuts.navigation.BottomNavigationViewCustom
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

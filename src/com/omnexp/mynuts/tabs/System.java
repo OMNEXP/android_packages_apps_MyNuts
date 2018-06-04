@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 ToxycOS Project
+ * Copyright (C) 2014-2016 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.tabs;
+package com.omnexp.mynuts.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,23 +34,23 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class StatusBar extends SettingsPreferenceFragment implements
+public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    
-    private static final String TAG = "StatusBar";
+
+        private static final String TAG = "System";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.status_bar);
+        addPreferencesFromResource(R.xml.system);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAZARD;
+        return MetricsProto.MetricsEvent.MYNUTS;
     }
 
     @Override

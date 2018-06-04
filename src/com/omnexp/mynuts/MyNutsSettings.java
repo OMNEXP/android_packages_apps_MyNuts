@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard;
+package com.omnexp.mynuts;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -32,16 +32,16 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.toxyc.hazard.navigation.BottomNavigationViewCustom;
-import com.toxyc.hazard.tabs.StatusBar;
-import com.toxyc.hazard.tabs.Recents;
-import com.toxyc.hazard.tabs.Lockscreen;
-import com.toxyc.hazard.tabs.Navigation;
-import com.toxyc.hazard.tabs.System;
+import com.omnexp.mynuts.navigation.BottomNavigationViewCustom;
+import com.omnexp.mynuts.tabs.StatusBar;
+import com.omnexp.mynuts.tabs.Recents;
+import com.omnexp.mynuts.tabs.Lockscreen;
+import com.omnexp.mynuts.tabs.Navigation;
+import com.omnexp.mynuts.tabs.System;
 
-public class HazardSettings extends SettingsPreferenceFragment {
+public class MyNutsSettings extends SettingsPreferenceFragment {
 
-    public HazardSettings() {
+    public MyNutsSettings() {
     }
 
     MenuItem menuitem;
@@ -51,7 +51,7 @@ public class HazardSettings extends SettingsPreferenceFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.hazard, container, false);
+        View view = inflater.inflate(R.layout.mynuts, container, false);
 
         final BottomNavigationViewCustom navigation = view.findViewById(R.id.navigation);
 
@@ -154,6 +154,6 @@ public class HazardSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAZARD;
+        return MetricsProto.MetricsEvent.MYNUTS;
     }
 }

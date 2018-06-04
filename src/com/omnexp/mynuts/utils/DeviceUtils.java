@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.toxyc.hazard.utils;
+package com.omnexp.mynuts.utils;
 
 import android.app.Activity;
 import android.content.Context;

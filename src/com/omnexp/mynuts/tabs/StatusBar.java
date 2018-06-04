@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.tabs;
+package com.omnexp.mynuts.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -29,28 +29,28 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
-import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class Recents extends SettingsPreferenceFragment implements
+public class StatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-    private static final String TAG = "Recents";
+    
+    private static final String TAG = "StatusBar";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.recents);
+        addPreferencesFromResource(R.xml.status_bar);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAZARD;
+        return MetricsProto.MetricsEvent.MYNUTS;
     }
 
     @Override
@@ -67,4 +67,6 @@ public class Recents extends SettingsPreferenceFragment implements
         final String key = preference.getKey();
         return true;
     }
+
 }
+

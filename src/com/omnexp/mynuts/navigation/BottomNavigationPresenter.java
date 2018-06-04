@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.navigation;
+package com.omnexp.mynuts.navigation;
 
 import android.content.Context;
 import android.os.Parcelable;

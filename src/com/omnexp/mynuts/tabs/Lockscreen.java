@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.tabs;
+package com.omnexp.mynuts.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -50,7 +50,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAZARD;
+        return MetricsProto.MetricsEvent.MYNUTS;
     }
 
     @Override

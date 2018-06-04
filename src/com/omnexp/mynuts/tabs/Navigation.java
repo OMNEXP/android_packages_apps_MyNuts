@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2016 The Dirty Unicorns Project
+ * Copyright (C) 2018 ToxycOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.toxyc.hazard.tabs;
+package com.omnexp.mynuts.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -29,28 +29,28 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class System extends SettingsPreferenceFragment implements
+public class Navigation extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-        private static final String TAG = "System";
+    private static final String TAG = "Navigation";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.system);
+        addPreferencesFromResource(R.xml.navigation);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAZARD;
+        return MetricsProto.MetricsEvent.MYNUTS;
     }
 
     @Override
@@ -67,6 +67,4 @@ public class System extends SettingsPreferenceFragment implements
         final String key = preference.getKey();
         return true;
     }
-
 }
-
